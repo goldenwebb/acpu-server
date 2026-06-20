@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2012-2050 Victor Kozub <victor.space@protonmail.com>
+
+.DS_Store
+node_modules/*
+builtAssets/*
+npm-debug.log
+package-lock.json
+*.tmp
+config/config.js
+.env
+

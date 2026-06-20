@@ -1,0 +1,36 @@
+{
+  "name": "acpu-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Kozub <victor.space@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "bonjour": "^3.5.0",
+    "dotenv": "^17.4.2",
+    "events": "^1.0.2",
+    "fileset": "^0.1.5",
+    "fs-watch-tree": "^0.2.5",
+    "glob": "^4.0.6",
+    "livecomment": "git://github.com/d08ble/livecomment",
+    "livelogging": "git://github.com/d08ble/livelogging",
+    "lodash": "^4.17.11",
+    "MD5": "^1.2.1",
+    "mkdirp": "^0.5.1",
+    "nan": "^2.12.1",
+    "node-watch": "^0.3.4",
+    "polo": "^0.8.1",
+    "sane": "^0.8.0",
+    "scanwatch": "^0.1.7",
+    "socket.io": "^1.1.0",
+    "temp": "^0.8.3",
+    "underscore": "^1.7.0",
+    "utf-8-validate": "^5.0.2",
+    "walkdir": "0.0.7",
+    "ws": "8.2.2"
+  }
+}
