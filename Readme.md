@@ -1,4 +1,4 @@
-# acpu-server is a simple signaling server for Animation CPU
+# acpu-server is a simple signaling server for AnimationCPU
 
 SPDX-License-Identifier: MIT
 Copyright (C) 2012-2050 Victor Kozub <victor.space@protonmail.com>
