@@ -7,14 +7,21 @@ const os = require('os');
 require('dotenv').config();
 
 function pathExpand(p) {
+//    console.log(p)
     return path.resolve(p.replace('~', os.homedir()));
 }
 
+console.log(`BASE ENV ${process.env.BASE}`)
 BASE=pathExpand(process.env.BASE)
-BASE_SOURCES=pathExpand(process.env.BASE_SOURCES)
 
-console.log(BASE);
-console.log(BASE_SOURCES);
+BASE_SOURCES=''
+if (process.env.BASE_SOURCES) {
+    console.log(`BASE_SOURCES ENV ${BASE_SOURCES}`);
+    BASE_SOURCES=pathExpand(process.env.BASE_SOURCES)
+}
+
+console.log(`BASE ${BASE}`);
+console.log(`BASE_SOURCES ${BASE_SOURCES}`);
 
 var HOME0 = BASE.split(':')[0]
 

@@ -4,6 +4,7 @@
 let _ = require('lodash')
 const path = require('path');
 const os = require('os');
+const fs = require('fs');
 
 // OPTIONS [
 
@@ -89,13 +90,24 @@ function getOptions(home, llog, dirs) {
 //    noUpload('image', 16000, 16001)
 
     // NO_UPLOAD ]
+    // AI path resolve [
     
     // Set paths
 
     options.setPaths = function setPaths(home, dirs) {
+        let found = false 
         _.each(dirs, (dir)=>{
-            options.paths[`${home}/${dir}/`] = {}
+            let p = `${home}/${dir}/`
+            if (fs.existsSync(p)) {
+                options.paths[p] = {}
+                found = true
+            }
         })
+
+        // if not found then just home
+        if (!found) {
+            options.paths[`${home}/`] = {}
+        }
     }
 
     // Set home / subdirs
@@ -112,6 +124,8 @@ function getOptions(home, llog, dirs) {
             options.paths[`${pathExpand(p)}/`] = {}
         }
     }
+
+    // AI path resolve ]
     
     return options
 }
