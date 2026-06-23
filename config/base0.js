@@ -16,6 +16,7 @@ function getOptions(home, llog, dirs) {
     var options = {
         ws_port: 8077,
         debug: 1,
+        sync_mode: 'JOIN', // JOIN or SYNC
         common: {
             ignore: [
             '.git',

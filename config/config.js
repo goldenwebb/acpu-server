@@ -36,10 +36,10 @@ let LLOG = `${HOME0}/log/`
 let options = require('./base0').getOptions(BASE, LLOG, ['acpul-demo', 'acpul-os'])
 
 // disable download video
-options.mediapermissions['video/5400'] = {op: 'down', min: 10977}
-options.mediapermissions['image/15000'] = {op: 'down', min: 9137}
-//options.mediapermissions['video/5400'] = '-'
-//options.mediapermissions['image/15000'] = '-'
+//options.mediapermissions['video/5400'] = {op: 'down', min: 10977}
+//options.mediapermissions['image/15000'] = {op: 'down', min: 9137}
+options.mediapermissions['video/5400'] = '-'
+options.mediapermissions['image/15000'] = '-'
 
 console.log(options)
 

@@ -9,4 +9,5 @@ package-lock.json
 *.tmp
 .vscode
 .env
+1.sh
 
