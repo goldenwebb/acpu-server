@@ -7,6 +7,5 @@ builtAssets/*
 npm-debug.log
 package-lock.json
 *.tmp
-config/config.js
 .env
 

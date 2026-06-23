@@ -37,7 +37,7 @@ node acpu-server.js
 
 ## Sponsorship
 
-Looking for sponsors to help fund development, hosting, and maintenance.
+Looking for sponsors to help fund development, hosting and maintenance.
 
 | Asset | Network | Address |
 | --- | --- | --- |
