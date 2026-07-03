@@ -41,6 +41,14 @@ let options = require('./base0').getOptions(BASE, LLOG, ['acpul-demo', 'acpul-os
 options.mediapermissions['video/5400'] = '-'
 options.mediapermissions['image/15000'] = '-'
 
+// TODO fix 
+// options.paths =
+//  0 = '/acpu-test/amedia/media'
+//  1 = '/acpu-test/'
+/// must be acpu-test, not media
+
+options.newFilePath = Object.keys(options.paths)[0]
+
 console.log(options)
 
 // Source code
